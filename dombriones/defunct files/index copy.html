@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!--<script  type="text/javascript" src="https://codesandbox.io/public/sse-hooks/sse-hooks.e15ace8ccace5398a721ffec81f121de.js"></script>
+    <script  type="text/javascript" src="https://codesandbox.io/static/js/banner.d9cb10a38.js"></script>-->
+
+
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="color-scheme" content="light dark">
+    <title>Homepage</title>
+    <meta name="description" content="Homepage of CrimsonDomino.">
+
+    <!-- Pico.css -->
+    <link rel="stylesheet" href="classes/pico.classless.blue.min.css">
+
+<style>
+    /* Style the tab */
+.tab {
+  overflow: hidden;
+}
+
+/* Style the buttons that are used to open the tab content */
+.tab button {
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  box-shadow: none;
+  transition: 0.3s;
+  font-size:1.25rem;
+  font-weight:bold;
+  text-align: start;
+  position: relative;
+  left: -1.5%;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {color:#ffa190
+  /*color:orange*/
+  /*color:#628fe8*/
+}
+
+/* Create an active/current tablink class */
+.tab button.active {color:tomato
+  /*color: #2060df;*/
+}
+
+/* Style the tab content */
+.tabcontent {
+  display: none;
+  border-top: none;
+}
+
+h6{
+  color:#ff826b;
+}
+</style>
+
+<script>
+    function openTab(evt, tabTitle) {
+  // Declare all variables
+  var i, tabcontent, tablinks;
+
+  // Get all elements with class="tabcontent" and hide them
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+
+  // Get all elements with class="tablinks" and remove the class "active"
+  tablinks = document.getElementsByClassName("tablinks");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
+  }
+
+  // Show the current tab, and add an "active" class to the button that opened the tab
+  document.getElementById(tabTitle).style.display = "block";
+  evt.currentTarget.className += " active";
+}
+</script>
+    
+</head>
+
+<body>
+    <header>
+      <hgroup>
+        <h1>Djong Borines <a id="arxiv-link" href="https://youtu.be/VF-QuXEumsg?si=_0T1uFHaBFr4M_hn" target="_blank"><img width="20" src="images/arxiv-logomark-small.svg" alt="arXiv"></a>
+						<a id="scholar-link" href="https://youtu.be/NE3uOVVjB98?si=93k4-J6wzwnKJChq" target="_blank"><img width="24" src="images/google-scholar.svg" alt="Google Scholar"></a>
+	          <a id="orcid-link" href="https://youtu.be/cYPwvKgkd6o?si=jQbVOHIkuo4jDGfO" target="_blank" ><img width="24" src="images/ORCID_iD.svg" alt="ORCID iD"></a>
+              <span style="float:right;">
+              <img src="iol3qabo96ld1.jpeg" alt="finn the dog" width="100" height="100">
+              </span>
+        </h1> 
+        <p>djong.borines[at]ntu.edu.sg | Overpass at Bonobo St., Manitoba, Canada </p> 
+        <!--<p> <a id="arxiv-link" href="https://youtu.be/VF-QuXEumsg?si=_0T1uFHaBFr4M_hn" target="_blank"><img width="24" src="images/arxiv-logomark-small.svg" alt="arXiv"></a>
+						<a id="scholar-link" href="https://youtu.be/NE3uOVVjB98?si=93k4-J6wzwnKJChq" target="_blank"><img width="24" src="images/google-scholar.svg" alt="Google Scholar"></a>
+	          <a id="orcid-link" href="https://youtu.be/cYPwvKgkd6o?si=jQbVOHIkuo4jDGfO" target="_blank" ><img width="24" src="images/ORCID_iD.svg" alt="ORCID iD"></a>
+				</p>-->
+      </hgroup>
+    </header>   
+    
+
+									
+
+
+    <main>
+<!-- Tab links -->
+<div class="tab">
+  <button class="tablinks active" onclick="openTab(event, 'About')">About</button>
+  <button class="tablinks" onclick="openTab(event, 'Research')">Research</button>
+  <button class="tablinks" onclick="openTab(event, 'Calendar')">Calendar</button>
+</div>
+
+<!-- Tab content -->
+<div id="About" class="tabcontent" style=display:block>
+  <p>I am a postdoctoral fellow of the School of Physical and Mathematical Sciences at Jandong University, Malaysia. My main research interest is algebraic combinatorics, mainly association schemes.</p>
+
+   <h6>News</h6>
+   <ul>
+    <li>Recently deceased
+   </ul>
+</div>
+
+<div id="Research" class="tabcontent">
+    <h6>Preprints</h6>
+    <ul>
+      <li>Vestibulum id elit quis massa interdum sodales.</li>
+      <li>Location of primitive orangutans in Arkansas Great Lakes.</li>
+      <li>Singular quotients of oblique asymptotal zodiac signs.</li>
+      <li>Nonstandard p-value test for quantum metrics applied to school lunch dietary information.</li>
+     </ul>
+
+    <h6>Published</h6>
+    <ul>
+      <li>Fullmetal alchemist brotherhood: characterization of anime camaraderie.</li>
+      <li>Skibidi toilet and the effects of brainrot on Gen Z intellectual capacity.</li>
+      <li>"Happy birthday", a treatise on the millenial loneliness epidemic.</li>
+      <li>Ibriisha aramu sudanish, itiyah italah enkidu martsatim, AI quantum machine learning.</li>
+    </ul>
+</div>
+
+<div id="Calendar" class="tabcontent">
+    <h6>Upcoming</h6>
+    <ul>
+        <li>Armageddon (celebrant)</li>
+    </ul>
+
+    <h6>Past</h6>
+    <ul>
+      <li>Workshop in plumbing (trainee)</li>
+      <li>Spearfishing (participant)</li>
+      <li>Animal husbandry (participant)</li>
+      <li>Star Wars (speaker)</li>
+    </ul>
+</div>
+    
+    </main>
+</body>
+
+</html>
