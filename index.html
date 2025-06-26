@@ -55,10 +55,25 @@
   border-top: none;
 }
 
+bcolored {
+   color: #ffa190;
+   font-weight:bold;
+   }
+
+colored {
+   color: #ffa190;
+   }
+
 h6{
   color:#ff826b;
 }
+
+sfont{
+  font-size:0.8rem;
+}
 </style>
+
+
 
 <script>
     function openTab(evt, tabTitle) {
@@ -82,24 +97,28 @@ h6{
   evt.currentTarget.className += " active";
 }
 </script>
+
+<script src="text-conversion.js" defer></script>
     
 </head>
 
 <body>
     <header>
       <hgroup>
-        <h1>Djong Borines <a id="arxiv-link" href="https://youtu.be/VF-QuXEumsg?si=_0T1uFHaBFr4M_hn" target="_blank"><img width="20" src="images/arxiv-logomark-small.svg" alt="arXiv"></a>
-						<a id="scholar-link" href="https://youtu.be/NE3uOVVjB98?si=93k4-J6wzwnKJChq" target="_blank"><img width="24" src="images/google-scholar.svg" alt="Google Scholar"></a>
-	          <a id="orcid-link" href="https://youtu.be/cYPwvKgkd6o?si=jQbVOHIkuo4jDGfO" target="_blank" ><img width="24" src="images/ORCID_iD.svg" alt="ORCID iD"></a>
+        <h1>Dom Briones <a id="arxiv-link" href="https://arxiv.org/search/?searchtype=author&query=Briones%2C+D+V+A" target="_blank"><img width="20" src="images/arxiv-logomark-small.svg" alt="arXiv"></a>
+						<a id="scholar-link" href="https://scholar.google.com/citations?view_op=list_works&hl=en&authuser=3&user=80raD-UAAAAJ" target="_blank"><img width="24" src="images/google-scholar.svg" alt="Google Scholar"></a>
+	          <a id="orcid-link" href="https://orcid.org/0000-0002-4545-3885" target="_blank" ><img width="24" src="images/ORCID_iD.svg" alt="ORCID iD"></a>
               <span style="float:right;">
-              <img src="images/iol3qabo96ld1.jpeg" alt="finn the dog" width="100" height="100">
+              <img src="images/profilepic.jpg" alt="profile photo" width="100" height="100">
               </span>
         </h1> 
-        <p>djong.borines[at]ntu.edu.sg <br> Overpass at Bonobo St., Manitoba, Canada </p> 
+        <span id="text-conversion">zdzoyzmz.ybzrzyiyoznyeyszy example</span>
+        <p>School of Physical and Mathematical Sciences <br> Nanyang Technological University, Singapore</p> 
         <!--<p> <a id="arxiv-link" href="https://youtu.be/VF-QuXEumsg?si=_0T1uFHaBFr4M_hn" target="_blank"><img width="24" src="images/arxiv-logomark-small.svg" alt="arXiv"></a>
 						<a id="scholar-link" href="https://youtu.be/NE3uOVVjB98?si=93k4-J6wzwnKJChq" target="_blank"><img width="24" src="images/google-scholar.svg" alt="Google Scholar"></a>
 	          <a id="orcid-link" href="https://youtu.be/cYPwvKgkd6o?si=jQbVOHIkuo4jDGfO" target="_blank" ><img width="24" src="images/ORCID_iD.svg" alt="ORCID iD"></a>
 				</p>-->
+        
       </hgroup>
     </header>   
     
@@ -112,51 +131,113 @@ h6{
 <div class="tab">
   <button class="tablinks active" onclick="openTab(event, 'About')">About</button>
   <button class="tablinks" onclick="openTab(event, 'Research')">Research</button>
-  <button class="tablinks" onclick="openTab(event, 'Calendar')">Calendar</button>
+  <button class="tablinks" onclick="openTab(event, 'Conferences')">Conferences</button>
+  <button class="tablinks" onclick="openTab(event, 'Teaching')">Teaching</button>
   <button class="tablinks" onclick="openTab(event, 'Miscellany')">Miscellany</button>
 </div>
 
 <!-- Tab content -->
 <div id="About" class="tabcontent" style=display:block>
-  <p>I am a postdoctoral fellow of the School of Physical and Mathematical Sciences at Jandong University, Malaysia. My main research interest is algebraic combinatorics, mainly association schemes.</p>
+  <p>I am a <colored>postdoctoral fellow</colored> of Nanyang Technological University, Singapore. 
+    <br>My main interest is <colored>algebraic combinatorics</colored>, mainly association schemes.
+    <br>Currently, I work on <colored>equiangular lines</colored> under <a href=https://grwgrvs.github.io/>Dr. Gary Greaves</a>.
+  </p>
 
    <h6>News</h6>
    <ul>
-    <li>Recently deceased
+    <li>Tosio Kato Fellowship 2025 (Math. Soc. of Japan and SEAMS)</li>
+    <li>Postdoctoral Fellowship 2024 (Nanyang Tech. Univ. Singapore)</li>
+    <li>Outstanding PhD Graduate awardee 2023 (Math. Soc. of the Philippines)</li>
+    <li>Faculty position (Univ. of the Philippines - Diliman)</li>
+    <li>Excellence in graduate studies (PhD) (2022) (Univ. of the Philippines - Diliman)</li>
    </ul>
 </div>
 
 <div id="Research" class="tabcontent">
-    <h6>Preprints</h6>
-    <ul>
-      <li>Vestibulum id elit quis massa interdum sodales.</li>
-      <li>Location of primitive orangutans in Arkansas Great Lakes.</li>
-      <li>Singular quotients of oblique asymptotal zodiac signs.</li>
-      <li>Nonstandard p-value test for quantum metrics applied to school lunch dietary information.</li>
-     </ul>
+
 
     <h6>Published</h6>
-    <ul>
-      <li>Fullmetal alchemist brotherhood: characterization of anime camaraderie.</li>
-      <li>Skibidi toilet and the effects of brainrot on Gen Z intellectual capacity.</li>
-      <li>"Happy birthday", a treatise on the millenial loneliness epidemic.</li>
-      <li>Ibriisha aramu sudanish, itiyah italah enkidu martsatim, AI quantum machine learning.</li>
-    </ul>
+    <ul><sfont>
+      <li>J.M.P. Balmaceda and D.V.A. Briones, <i>Families of association schemes on triples from two-transitive groups</i>, Ars
+Mathematica Contamporanea <b>25</b> (3), May 2025, <a href=https://doi.org/10.26493/1855-3974.2897.19b>https://doi.org/10.26493/1855-3974.2897.19b</a></li>
+      <li>C. Amarra, D.V.A. Briones, and M.J.C. Loquias, <i>Multiple contractions of permutation arrays</i>, Journal of Algebraic
+Combinatorics <b>58</b> (3) 695-715, June 2023, <a href=https://doi.org/10.1007/s10801-023-01238-2>https://doi.org/10.1007/s10801-023-01238-2</a></li>
+      <li>J.M.P. Balmaceda and D.V.A. Briones, <i>A survey on association schemes on triples</i>, Electronic Journal of Graph Theory and
+Applications <b>11</b> (1), 15-26, 2023, <a href="http://dx.doi.org/10.5614/ejgta.2023.11.1.2">http://dx.doi.org/10.5614/ejgta.2023.11.1.2</a></li>
+      <li>J.M.P. Balmaceda and D.V.A. Briones, <i>Association schemes on triples over few vertices</i>, Matimyas Matematika <b>45</b> (1), 13-26, 2022, <a href="http://mathsociety.ph/matimyas/images/vol45/BalmacedaMatimyas.pdf">http://mathsociety.ph/matimyas/images/vol45/BalmacedaMatimyas.pdf</a></li>
+    </sfont></ul>
+
+
+    <h6>Preprints/In-preparation</h6>
+    <ul><sfont>
+      <li>J.M.P. Balmaceda, D.V.A. Briones, and J. Buloron, <i>Parameters of association schemes on triples from projective general unitary groups</i></li>
+      <li>D.V.A. Briones, <i>Association schemes on triples from affine special semilinear groups</i></li>
+      <li>D.V.A Briones and J. Cruz, <i>Maximal subgroups of class-V groups</i></li>
+    </sfont></ul>
+
+    <h6>On-going projects</h6>
+    <ul><sfont>
+    <li>(with G. Greaves, and J. Lansdown) Equiangular tight frames with commutative coherent closure</li>
+    <li>(with C. Amarra) Constructions of block-transitive 3-chain imprimitive uniform 2-designs</li>
+    <li>Translation-invariant association schemes on triples </li>
+    </sfont></ul>
 </div>
 
-<div id="Calendar" class="tabcontent">
-    <h6>Upcoming</h6>
+<div id="Conferences" class="tabcontent">
+    <h6>Presentations</h6>
+    <ul><sfont>
+    <li>CodEx Seminars (2025)</li>
+    <li>Math. Soc. of the Philippines Annual Convention (MSP Phil., 2019, 2022, 2023, 2024)</li>
+    <li>Outstanding PhD Graduate Awardee Lecture (MSP Phil., 2023)</li>
+    <li>Tohoku University Combinatorics Group Presentation (Tohoku Uni., conducted online) (2023)</li>
+    <li>International Algebra Conference of the Philippines (MSU-IIT, 2023)</li>
+    <li>45th Australasian Combinatorics Conference (Uni. Western Aus., 2023)</li>
+    <li>UP Diliman IMath Research Webinar Series (UP Diliman, 2022)</li>
+    <li>Walisongo State Islamic University Presentation (WSIU, conducted online) (2022)</li>
+    </sfont></ul>
+
+    <h6>Workshops</h6>
+    <ul><sfont>
+    <li>AlCoVE: Algebraic Combinatorics Virtual Expedition (Uni. of Waterloo(Online), 2025)</li>
+    <li>Algebraic and Analytic Methods in Combinatorics (SLMSI (Online), 2025)</li> 
+    <li>Frontiers in Leavitt Path Algebras and Related Topics (Lecturer, RCTP Bohol, 2024)</li>   
+    <li>CIMPA School on Galois Representations and Modular Forms (UP Diliman,	2023)</li>     
+    <li>ICTP Summer School in Group Theory and Representation Theory (VIASM 2022)</li>    
+    <li>Workshop in Commutative Algebra and Algebraic Geometry (VAST (Online), 2021)</li>  
+    <li>CIMPA School on Numeration and Fractals (UP Diliman, 2020)</li>
+    <li>Workshop on Approximation and Optimization (UP Diliman, 2019)</li>    
+    </sfont></ul>
+
+    <h6>Memberships</h6>
+    <ul><sfont>
+      <li>Australasian Combinatorics Society (Australia)	(2023 - 2024)</li>
+      <li>Matimyas Matematika (Mathematics Journal of the MSP, Managing Editor)	(2023 - Present)</li>
+      <li>Leavitt Path Algebra Research Group (Research Center for Theoretical Physics, Bohol)	(2023 - Present)</li>
+      <li>Phi Kappa Phi Honor Society	(2022 - Present)</li>
+      <li>Discrete Geometry and Combinatorics Research Group (Affiliate Member) (UP Diliman)	(2022 - Present)</li>
+      <li>Groups, Geometry, and Representations Research Group (UP Diliman)	(2022-Present)</li>
+      <li>Mathematical Society of the Philippines (MSP)	(2019 - Present)</li>
+      <li>Mathematics Graduate Student Research Group	(2019 - 2022)</li>
+    </sfont></ul>  
+</div>
+
+<div id="Teaching" class="tabcontent">
+  <h6>Classes Taught</h6>
     <ul>
-        <li>Armageddon (celebrant)</li>
+      <li>Math 21 (Elementary Analysis I) (UP Diliman)</li>
+      <li>Math 22 (Elementary Analysis II) (UP Diliman)</li>
+      <li>Math 40 (Linear Algebra) (UP Diliman)</li>
+      <li>Math 110.1 (Abstract Algebra I) (UP Diliman)</li>
     </ul>
 
-    <h6>Past</h6>
+  <h6>Supervision</h6>
     <ul>
-      <li>Workshop in plumbing (trainee)</li>
-      <li>Spearfishing (participant)</li>
-      <li>Animal husbandry (participant)</li>
-      <li>Star Wars (speaker)</li>
-    </ul>
+      <li>Joris Buloron (PhD Mathematics)	(2024 - Present)</li>
+      <li>Jonvert Cruz (MS Mathematics)	(2023 - 2024) </li>
+      <li>Andrei Hugo (BS Mathematics) (2023 - 2024)</li>
+    </ul>    
+
+
 </div>
 
 <div id="Miscellany" class="tabcontent">
