@@ -5,8 +5,6 @@
     <!--<script  type="text/javascript" src="https://codesandbox.io/public/sse-hooks/sse-hooks.e15ace8ccace5398a721ffec81f121de.js"></script>
     <script  type="text/javascript" src="https://codesandbox.io/static/js/banner.d9cb10a38.js"></script>-->
 
-
-
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="color-scheme" content="light dark">
@@ -99,7 +97,28 @@ sfont{
 </script>
 
 <script src="text-conversion.js" defer></script>
-    
+ 
+<!--for geogebra-->
+<meta name=viewport content="width=device-width,initial-scale=1">  
+<script src="https://www.geogebra.org/apps/deployggb.js"></script>
+
+  <script>
+  var params = {
+            "appName": "classic", 
+            "width": 500, 
+            "height": 400, 
+            "showToolBar": false, 
+            "showAlgebraInput": false, 
+            "showMenuBar": false,
+            "material_id": "yfbyfunk" 
+            };
+    var ggbApplet = new GGBApplet(params, true);
+    window.addEventListener("load", function() { 
+        ggbApplet.inject('ggb-element');
+    });
+    </script> 
+ <!--geogebra stuff end-->   
+
 </head>
 
 <body>
@@ -109,7 +128,7 @@ sfont{
 						<a id="scholar-link" href="https://scholar.google.com/citations?view_op=list_works&hl=en&authuser=3&user=80raD-UAAAAJ" target="_blank"><img width="24" src="images/google-scholar.svg" alt="Google Scholar"></a>
 	          <a id="orcid-link" href="https://orcid.org/0000-0002-4545-3885" target="_blank" ><img width="24" src="images/ORCID_iD.svg" alt="ORCID iD"></a>
               <span style="float:right;">
-              <img src="images/profilepic.jpg" alt="profile photo" width="100" height="100">
+              <img src="images/profilepic.jpg" alt="profile photo" width="140" height="140">
               </span>
         </h1> 
         <span id="text-conversion">zdzoyzmz.ybzrzyiyoznyeyszy example</span>
@@ -242,7 +261,15 @@ Applications <b>11</b> (1), 15-26, 2023, <a href="http://dx.doi.org/10.5614/ejgt
 
 <div id="Miscellany" class="tabcontent">
 
+<br>
+  <div style="display: flex; flex-direction: row; align-items: center; justify-content: center;">
+    <div id="ggb-element" ></div>
+  </div>
+  <div style="display: flex; flex-direction: row; align-items: center; justify-content: center;"><p>(<a href=https://www.geogebra.org/m/yfbyfunk>"Space Filler"</a> applet by John Golden)</p></div>
   
+  
+
+
     <ul>
       <li> <a href="https://www.jgibson.id.au/lievis/">Joel Gibson's Lie theory visualizations website</a>
       <li> <a href="https://en.wikipedia.org/wiki/Gauss–Lucas_theorem">Gauss-Lucas theorem</a>
@@ -250,6 +277,7 @@ Applications <b>11</b> (1), 15-26, 2023, <a href="http://dx.doi.org/10.5614/ejgt
       <li> <a href="http://geometricolor.ch/">Periodic and quasiperiodic tiling generator</a>
       <li> <a href="https://mathigon.org/">Mathigon website</a>
       <li> <a href="https://www.qedcat.com/articles/juggling_survey.pdf">The Mathematics of Juggling by Burkard Polster</a>
+      <li><a href=https://virtualmathmuseum.org/index.html>Virtual math museum</a></li>
       </ul>
 </div>
     
