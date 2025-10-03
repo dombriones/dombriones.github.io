@@ -8,5 +8,5 @@ document.addEventListener('DOMContentLoaded', function ()
 		.replace(' ', '@')
 		.replaceAll(' ', '.')
 		.replaceAll(new RegExp('[zy]', 'g'), '')
-		.replace('example', 'ntu.edu.sg');
+		.replace('example', 'tohoku.ac.jp');
 });
